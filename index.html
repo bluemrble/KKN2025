@@ -250,7 +250,10 @@
                 layer.bindPopup(
                     '<div style="font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Informasi Dusun</div>' +
                     '<strong>Dusun:</strong> ' + feature.properties.Dusun + '<br>' +
-                    '<strong>Desa:</strong> ' + feature.properties.DESA
+                    '<strong>Desa:</strong> ' + feature.properties.DESA + '<br>' +
+                    '<strong>Kecamatan:</strong> ' + (feature.properties.KECAMATAN || 'Somagede') + '<br>' +
+                    '<strong>Kabupaten:</strong> ' + (feature.properties.KABUPATEN || 'Banyumas') + '<br>' +
+                    '<strong>Provinsi:</strong> ' + (feature.properties.PROVINSI || 'Jawa Tengah')
                 );
             }
         }).addTo(map);
@@ -271,7 +274,10 @@
                     '<div style="font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Informasi RW</div>' +
                     '<strong>RW:</strong> ' + feature.properties.RW + '<br>' +
                     '<strong>Dusun:</strong> ' + (feature.properties.Dusun || '-') + '<br>' +
-                    '<strong>Desa:</strong> ' + feature.properties.DESA
+                    '<strong>Desa:</strong> ' + feature.properties.DESA + '<br>' +
+                    '<strong>Kecamatan:</strong> ' + (feature.properties.KECAMATAN || 'Somagede') + '<br>' +
+                    '<strong>Kabupaten:</strong> ' + (feature.properties.KABUPATEN || 'Banyumas') + '<br>' +
+                    '<strong>Provinsi:</strong> ' + (feature.properties.PROVINSI || 'Jawa Tengah')
                 );
             }
         });
@@ -292,7 +298,11 @@
                     '<div style="font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Informasi RT</div>' +
                     '<strong>RT:</strong> ' + feature.properties.RT + '<br>' +
                     '<strong>RW:</strong> ' + (feature.properties.RW || '-') + '<br>' +
-                    '<strong>Desa:</strong> ' + feature.properties.DESA
+                    '<strong>Desa:</strong> ' + feature.properties.DESA + '<strong>Dusun:</strong> ' + (feature.properties.Dusun || '-') + '<br>' +
+                    '<strong>Desa:</strong> ' + feature.properties.DESA + '<br>' +
+                    '<strong>Kecamatan:</strong> ' + (feature.properties.KECAMATAN || 'Somagede') + '<br>' +
+                    '<strong>Kabupaten:</strong> ' + (feature.properties.KABUPATEN || 'Banyumas') + '<br>' +
+                    '<strong>Provinsi:</strong> ' + (feature.properties.PROVINSI || 'Jawa Tengah')
                 );
             }
         });
